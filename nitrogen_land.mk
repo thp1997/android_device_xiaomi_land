@@ -21,14 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/nitrogen/products/common.mk)
 
 # Inherit from land device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_BRAND := Xiaomi
+PRODUCT_NAME := nitrogen_land
+BOARD_VENDOR := Xiaomi
 PRODUCT_DEVICE := land
-PRODUCT_NAME := lineage_land
+PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 3S
 PRODUCT_MANUFACTURER := Wingtech
 
